@@ -7,7 +7,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CountryApiStatusTest {
-    @Value("{SECRET_KEY}")
+    @Value("${SECRET_KEY}")
     private String secretKey;
     @Test
     public void allCountriesShouldReturn200() {
