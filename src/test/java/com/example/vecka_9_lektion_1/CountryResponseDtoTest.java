@@ -10,6 +10,12 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+//Vi testar att vår DTO deserialiserar JSON-svaret korrekt
+// ,alltså att Jackson mappas rätt från API:ts JSON till vårt CountryResponse-objekt med alla fält.
+// Det är ett steg upp från strukturtestet: inte bara att nycklarna finns,
+// utan att värdena landar på rätt ställe i rätt typ.
+
+
 public class CountryResponseDtoTest {
     @Test
     void countryResponse_deserializesLatviaCorrectly() {

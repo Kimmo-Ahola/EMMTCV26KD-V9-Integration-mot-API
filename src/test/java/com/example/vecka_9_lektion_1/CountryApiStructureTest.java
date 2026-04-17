@@ -9,6 +9,13 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+//Vi testar att API:ts svarsstruktur innehåller de fält vi förväntar oss
+//name, region, subregion, languages, population och borders.
+// Alltså inte värden, utan att nycklarna faktiskt finns med i svaret.
+// Om externa API:t skulle ta bort eller byta namn på ett fält,
+// fångar detta test det innan det kraschar någon annanstans i koden.
+
+
 public class CountryApiStructureTest {
     @Test
     public void countryByNameShouldContainExpectedFields(){

@@ -13,6 +13,11 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+//Vi testar att CountryService fungerar korrekt end-to-end
+// att hela kedjan från API-anrop, genom CountryApiClient, deserialisering via DTO,
+// och slutligen mappning till vår Country-modell fungerar som den ska.
+// Innan testade vi mer individuellt, nu testar vi hela flödet
+
 public class CountryServiceTest {
     private CountryService countryService;
     @BeforeEach
